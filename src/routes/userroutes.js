@@ -9,5 +9,5 @@ const routes=express.Router();
 routes.post('/signup',signup);
 routes.post('/signin',signin);
 routes.post('/userdetails',verifycontroller,userDetails);
-routes.post('/fetchnews',fetchController);
+routes.post('/fetchnews',verifycontroller,fetchController);
 module.exports=routes;
